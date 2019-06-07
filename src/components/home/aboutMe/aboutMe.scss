@@ -1,0 +1,62 @@
+@import "../../../config/config.scss";
+
+.aboutMe {
+  background: #e5eaf7;
+  font-family: "Josefin Sans", sans-serif;
+  .headline {
+    text-align: center;
+    padding-top: 20px;
+    overflow: hidden;
+    span {
+      display: inline-block;
+      position: relative;
+      font-size: 38px;
+      color: $primary-color;
+    }
+    span:before,
+    span:after {
+      content: "";
+      position: absolute;
+      height: 7px;
+      border-bottom: 4px solid $primary-color;
+      top: 9px;
+      width: 42vw;
+    }
+    span:before {
+      right: 100%;
+      margin-right: 25px;
+    }
+    span:after {
+      left: 100%;
+      margin-left: 25px;
+    }
+  }
+  .wrapper {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      margin: 0 auto;
+      width: 80%;
+      .image {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        img {
+          max-width: 85%;
+          max-height: 85%;
+          border-radius: 500px;
+          -webkit-border-radius: 500px;
+          -moz-border-radius: 500px;
+          -ms-border-radius: 500px;
+          -o-border-radius: 500px;
+          border: 2px solid $primary-color;
+        }
+      }
+      .text {
+        font-size: 30px;
+        padding: 15px;
+        color: $primary-color;
+      }
+    }
+  }
+}

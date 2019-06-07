@@ -1,0 +1,45 @@
+@import "../../config/config.scss";
+
+$link-size: 20px;
+$link-padding: 15px;
+
+header {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  background: lighten($primary-color, 40%);
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  color: darken($primary-color, 5%);
+  .logo {
+    float: left;
+    padding-left: 20px;
+    padding-top: $link-size + $link-padding - 27px;
+    padding-bottom: $link-size + $link-padding - 27px;
+    font-size: 27px;
+  }
+  nav {
+    float: right;
+
+    .link {
+      float: left;
+      display: block;
+      padding-top: $link-padding;
+      padding-bottom: $link-padding;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: $link-size;
+      cursor: pointer;
+    }
+    .link:hover {
+      background: lighten($primary-color, 25%);
+      color: darken($secondary-color, 5%);
+    }
+    @media (max-width: 680px) {
+      .link {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}
