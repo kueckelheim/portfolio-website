@@ -4,7 +4,9 @@ import "./home.scss";
 
 import Header from "../header/header.js";
 import Top from "./top/top.js";
-import AboutMe from "./aboutMe/aboutMe.js";
+import What from "./what/what.js";
+import Skills from "./skills/skills.js";
+import Strengths from "./strengths/strengths.js";
 
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween } from "react-gsap";
@@ -19,29 +21,20 @@ class Home extends Component {
           <title>Erik Kückelheim</title>
           <meta name="description" content="Frontend Web Developer" />
         </Helmet>
-
-        <Controller>
-          <Scene triggerElement="#trigger" triggerHook="onLeave">
-            {progress => (
-              <Tween
-                from={{ className: "invisible" }}
-                to={{
-                  className: ""
-                }}
-                totalProgress={progress}
-                paused
-              >
-                <div>
-                  <Header />
-                </div>
-              </Tween>
-            )}
-          </Scene>
-        </Controller>
         <Top />
         <div id="triggerNav" />
-
-        <AboutMe />
+        <Controller>
+          <Scene Duration={10000} triggerHook="onLeave" pin classToggle="shown">
+            {progress => (
+              <div>
+                <Header />
+              </div>
+            )}
+          </Scene>
+          <What />
+          <Skills />
+          <Strengths />
+        </Controller>
       </main>
     );
   }

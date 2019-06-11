@@ -1,0 +1,81 @@
+@import "../../../config/config.scss";
+
+.aboutMe {
+  background: #ffffff;
+  margin-top: 4vh;
+  .headline {
+    text-align: center;
+    padding-top: 10vh;
+    overflow: hidden;
+    font-size: 38px;
+    color: lighten(black, 20%);
+    font-weight: bold;
+  }
+  .underline {
+    text-align: center;
+    width: 200px;
+    height: 3px;
+    background: lighten(black, 20%);
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    margin-top: 10px;
+  }
+
+  .infoWrapper {
+    margin: 0 auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    .infoBox {
+      text-align: center;
+      color: lighten(black, 20%);
+      width: 100%;
+      font-size: 20px;
+      margin: 0 auto;
+      .iconBox {
+        width: 60%;
+        background: lightblue;
+        margin: 0 auto;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        img {
+          width: 80%;
+          height: auto;
+          margin: 0 auto;
+          margin-top: 20px;
+          margin-bottom: 15px;
+        }
+      }
+      h2 {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    .infoWrapper {
+      grid-template-columns: 1fr;
+      .infoBox {
+        font-size: 18px;
+        width: 60%;
+        .iconBox {
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .infoWrapper {
+      .infoBox {
+        font-size: 16px;
+        width: 100%;
+        .iconBox {
+          width: 40%;
+        }
+      }
+    }
+  }
+}

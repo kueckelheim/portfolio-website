@@ -1,0 +1,81 @@
+@import "../../../config/config.scss";
+
+$size: 150px;
+
+.strengths {
+  background: darken(#ffffff, 3%);
+  padding-top: 5vh;
+  padding-bottom: 40vh;
+  .headline {
+    text-align: center;
+    padding-top: 10vh;
+    overflow: hidden;
+    font-size: 38px;
+    color: lighten(black, 20%);
+    font-weight: bold;
+  }
+  .underline {
+    text-align: center;
+    width: 250px;
+    height: 3px;
+    background: lighten(black, 20%);
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    margin-top: 10px;
+  }
+
+  .strength {
+    margin: 0 auto;
+    width: 80%;
+    .hexagon {
+      float: left;
+      position: relative;
+      width: $size * 1.3;
+      width: 20%;
+
+      .hexagon1 {
+        float: left;
+        border-right: 0.3 * $size solid #6c6;
+        border-top: 0.52 * $size solid transparent;
+        border-bottom: 0.52 * $size solid transparent;
+      }
+      .hexagon2 {
+        float: left;
+        width: 0.6 * $size;
+        height: 1.04 * $size;
+        background-color: #6c6;
+        position: relative;
+        img {
+          width: 100%;
+          position: absolute;
+          height: auto;
+          margin: auto;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      .hexagon3 {
+        float: left;
+        border-left: 0.3 * $size solid #6c6;
+        border-top: 0.52 * $size solid transparent;
+        border-bottom: 0.52 * $size solid transparent;
+      }
+    }
+    .descriptionWrapper {
+      float: left;
+      width: 75%;
+      height: $size * 1.04;
+      font-size: 20px;
+      margin-left: 5%;
+      .description {
+        margin-top: $size * 0.15;
+        h2 {
+          margin: 0;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
