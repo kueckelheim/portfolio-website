@@ -3,44 +3,26 @@
 .skills {
   background: darken(#ffffff, 3%);
   padding-top: 5vh;
-  padding-bottom: 10vh;
-  .headline {
-    text-align: center;
-    padding-top: 10vh;
-    overflow: hidden;
-    font-size: 38px;
-    color: lighten(black, 20%);
-    font-weight: bold;
-  }
-  .underline {
-    text-align: center;
-    width: 120px;
-    height: 3px;
-    background: lighten(black, 20%);
+
+  .skillWrapper {
     margin: 0 auto;
-    margin-bottom: 10vh;
-    margin-top: 10px;
-  }
-  .grid {
-    margin: 0 auto;
-    width: 85%;
+    width: 100%;
     .skill {
-      padding-bottom: 0.5vh;
-      height: 50px;
+      height: 8vh;
       .name {
         float: left;
-        width: 10%;
-        height: 4vh;
-        line-height: 4vh;
+        width: 15%;
+        height: 5vh;
+        line-height: 5vh;
         text-align: center;
         background: $secondary-color;
         color: white;
-        font-size: 15px;
+        font-size: 1vw;
       }
       .bar {
         float: left;
-        width: 90%;
-        height: 4vh;
+        width: 85%;
+        height: 5vh;
         background: lightgrey;
         position: relative;
         .fill {
@@ -68,6 +50,36 @@
           }
         }
       }
+    }
+  }
+  @media (max-width: 800px) {
+    .skillWrapper {
+      width: 75%;
+      .skill {
+        height: 6vh;
+        .name {
+          height: 20px;
+          font-size: 10px;
+          line-height: 20px;
+        }
+        .bar {
+          height: 20px;
+        }
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .skillWrapper {
+      .skill {
+        .name {
+          font-size: 08px;
+        }
+      }
+    }
+  }
+  @media (max-width: 370px) {
+    .skillWrapper {
+      width: 95%;
     }
   }
 }

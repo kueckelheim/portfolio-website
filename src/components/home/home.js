@@ -32,8 +32,14 @@ class Home extends Component {
             )}
           </Scene>
           <What />
-          <Skills />
-          <Strengths />
+          <div className="skillsWrapper">
+            <div className="headline">SKILLS</div>
+            <div className="underline" />
+            <div className="grid">
+              <Strengths />
+              <Skills />
+            </div>
+          </div>
         </Controller>
       </main>
     );

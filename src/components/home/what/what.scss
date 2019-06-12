@@ -3,17 +3,18 @@
 .aboutMe {
   background: #ffffff;
   margin-top: 4vh;
+  padding-bottom: 7vh;
   .headline {
     text-align: center;
     padding-top: 10vh;
     overflow: hidden;
-    font-size: 38px;
+    font-size: 3vw;
     color: lighten(black, 20%);
     font-weight: bold;
   }
   .underline {
     text-align: center;
-    width: 200px;
+    width: 15vw;
     height: 3px;
     background: lighten(black, 20%);
     margin: 0 auto;
@@ -31,10 +32,10 @@
       text-align: center;
       color: lighten(black, 20%);
       width: 100%;
-      font-size: 20px;
+      font-size: 17px;
       margin: 0 auto;
       .iconBox {
-        width: 60%;
+        width: 40%;
         background: lightblue;
         margin: 0 auto;
         border-radius: 20px;
@@ -68,6 +69,12 @@
     }
   }
   @media (max-width: 600px) {
+    .headline {
+      font-size: 26px;
+    }
+    .underline {
+      width: 150px;
+    }
     .infoWrapper {
       .infoBox {
         font-size: 16px;
