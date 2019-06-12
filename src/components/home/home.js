@@ -5,8 +5,7 @@ import "./home.scss";
 import Header from "../header/header.js";
 import Top from "./top/top.js";
 import What from "./what/what.js";
-import Skills from "./skills/skills.js";
-import Strengths from "./strengths/strengths.js";
+import SkillsWrapper from "./skillsFolder/skillsWrapper.js";
 
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween } from "react-gsap";
@@ -32,14 +31,7 @@ class Home extends Component {
             )}
           </Scene>
           <What />
-          <div className="skillsWrapper">
-            <div className="headline">SKILLS</div>
-            <div className="underline" />
-            <div className="grid">
-              <Strengths />
-              <Skills />
-            </div>
-          </div>
+          <SkillsWrapper />
         </Controller>
       </main>
     );
