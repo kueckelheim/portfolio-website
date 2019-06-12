@@ -6,6 +6,7 @@ import Header from "../header/header.js";
 import Top from "./top/top.js";
 import What from "./what/what.js";
 import SkillsWrapper from "./skillsFolder/skillsWrapper.js";
+import Projects from "./projects/projects.js";
 
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween } from "react-gsap";
@@ -22,17 +23,12 @@ class Home extends Component {
         </Helmet>
         <Top />
         <div id="triggerNav" />
-        <Controller>
-          <Scene Duration={10000} triggerHook="onLeave" pin classToggle="shown">
-            {progress => (
-              <div>
-                <Header />
-              </div>
-            )}
-          </Scene>
-          <What />
-          <SkillsWrapper />
-        </Controller>
+        <div>
+          <Header />
+        </div>
+        <What />
+        <SkillsWrapper />
+        <Projects />
       </main>
     );
   }
