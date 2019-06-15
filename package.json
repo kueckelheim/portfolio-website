@@ -13,7 +13,8 @@
     "react-responsive": "^6.1.2",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
-    "react-scrollmagic": "^2.1.0"
+    "react-scrollmagic": "^2.1.0",
+    "react-z-index": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

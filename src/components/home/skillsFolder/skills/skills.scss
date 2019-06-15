@@ -24,9 +24,7 @@
         width: 85%;
         height: 5vh;
         background: lightgrey;
-        position: relative;
         .fill {
-          position: absolute;
           left: 0;
           height: 100%;
           background: lighten($secondary-color, 20%);

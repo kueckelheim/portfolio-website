@@ -3,6 +3,10 @@ import "./projects.scss";
 import "../../../config/animate.min.css";
 
 class Projects extends Component {
+  componentDidMount() {
+    this.props.onLoaded();
+  }
+
   //   constructor(props) {
   //     super(props);
   //     this.state = {

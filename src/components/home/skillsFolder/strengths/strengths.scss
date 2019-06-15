@@ -24,16 +24,13 @@
           width: 0.6 * $size;
           height: 1.04 * $size;
           background-color: #6c6;
-          position: relative;
+          display: grid;
+          justify-content: center;
+          align-content: center;
           img {
             width: 100%;
-            position: absolute;
             height: auto;
             margin: auto;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
           }
         }
         .hexagon3 {
