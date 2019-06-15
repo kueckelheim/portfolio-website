@@ -1,0 +1,72 @@
+@import "../../../config/config.scss";
+
+footer {
+  background: darken(#ffffff, 13%);
+  .headline {
+    text-align: center;
+    padding-top: 10vh;
+    overflow: hidden;
+    font-size: 3vw;
+    color: lighten(black, 20%);
+    font-weight: bold;
+  }
+  .underline {
+    text-align: center;
+    width: 15vw;
+    height: 3px;
+    background: lighten(black, 20%);
+    margin: 0 auto;
+    margin-bottom: 8vh;
+    margin-top: 10px;
+  }
+  .contact {
+    margin: 0 auto;
+    font-size: 1.5vw;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 5px;
+    a {
+      color: $secondary-color;
+    }
+    img {
+      background: grey;
+    }
+    img:hover {
+      background: darken(#ffffff, 33%);
+      transition: all 0.3s ease-out;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+    }
+  }
+  .bottom {
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    .copyright {
+      float: left;
+    }
+    .impressum {
+      float: right;
+    }
+    .privacy {
+      float: right;
+      padding-left: 20px;
+    }
+  }
+  .foot:hover {
+    color: lighten($secondary-color, 20%);
+    cursor: pointer;
+  }
+  @media (max-width: 600px) {
+    .headline {
+      font-size: 26px;
+    }
+    .underline {
+      width: 150px;
+    }
+  }
+}

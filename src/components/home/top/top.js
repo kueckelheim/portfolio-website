@@ -27,7 +27,10 @@ class Top extends Component {
                     </div>
                     <div className="btnWrapperWrapper">
                       <div className="btnWrapper">
-                        <div className="btn">
+                        <div
+                          className="btn"
+                          onClick={() => this.props.onClickFooter()}
+                        >
                           <div className="center">
                             <div className="wrapper">
                               <img
@@ -41,21 +44,31 @@ class Top extends Component {
                             </div>
                           </div>
                         </div>
-                        <div className="btn">PROJECTS</div>
-                        <div className="btn">
-                          <div className="center">
-                            <div className="wrapper">
-                              <img
-                                src={
-                                  process.env.PUBLIC_URL +
-                                  "/image/GitHub-Mark-Light-32px.png"
-                                }
-                                alt="GitHub Icon"
-                              />
-                              <div>GitHub</div>
+                        <div
+                          className="btn"
+                          onClick={() => this.props.onClickProjects()}
+                        >
+                          PROJECTS
+                        </div>
+                        <a
+                          href="https://github.com/kueckelheim"
+                          target="_blank"
+                        >
+                          <div className="btn">
+                            <div className="center">
+                              <div className="wrapper">
+                                <img
+                                  src={
+                                    process.env.PUBLIC_URL +
+                                    "/image/GitHub-Mark-Light-32px.png"
+                                  }
+                                  alt="GitHub Icon"
+                                />
+                                <div>GitHub</div>
+                              </div>
                             </div>
                           </div>
-                        </div>
+                        </a>
                       </div>
                     </div>
                   </div>

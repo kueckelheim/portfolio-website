@@ -54,9 +54,9 @@ class Projects extends Component {
         <div className="grid">
           <div
             className="project"
-            onMouseEnter={this.onMouseEnter}
-            onMouseLeave={this.onMouseLeave}
-            id={0}
+            // onMouseEnter={this.onMouseEnter}
+            // onMouseLeave={this.onMouseLeave}
+            // id={0}
           >
             <div className="imgWrapper">
               <img
@@ -77,62 +77,84 @@ class Projects extends Component {
                   <div className="skill">R</div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Mollitia iure impedit ullam in maiores possimus, illo a
-                  voluptatibus ipsam. A!
+                  A fully customized blog page written in ReactJS with a
+                  Django-based backend for commenting
                 </p>
                 <div className="buttonWrapper">
-                  <div className="button1">VISIT</div>
-                  <div className="button2">
-                    <img
-                      src={
-                        process.env.PUBLIC_URL + "/image/GitHub-Mark-32px.png"
-                      }
-                      alt="GitHub Icon"
-                    />
-                    <div>GitHub</div>
-                  </div>
+                  <a href="https://www.meetsoutheast.com/" target="_blank">
+                    <div className="button1">VISIT</div>
+                  </a>
+                  <a
+                    href="https://github.com/kueckelheim/SouthEastAsiaBlog"
+                    target="_blank"
+                  >
+                    <div className="button2">
+                      <img
+                        src={
+                          process.env.PUBLIC_URL + "/image/GitHub-Mark-32px.png"
+                        }
+                        alt="GitHub Icon"
+                      />
+
+                      <div>GitHub</div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+
           {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
           <div
             className="project"
-            onMouseEnter={this.onMouseEnter}
-            onMouseLeave={this.onMouseLeave}
-            id={1}
+            // onMouseEnter={this.onMouseEnter}
+            // onMouseLeave={this.onMouseLeave}
+            // id={1}
           >
             <div className="imgWrapper">
               <img
-                src={process.env.PUBLIC_URL + "/image/meetsoutheast.png"}
+                src={process.env.PUBLIC_URL + "/image/secretpath.png"}
                 alt="Erik Kueckelheim web developer"
               />
             </div>
-            <div className="bottom1">meetsoutheast CMS</div>
+            <div className="bottom1">Blog Creation Tool (meetsoutheast)</div>
             <div className="overlay">
               <div className="wrapper">
-                <div className="overlayName">meetsoutheast CMS</div>
+                <div className="overlayName">
+                  Blog Creation Tool (meetsoutheast)
+                </div>
                 <div className="flex">
                   <div className="skill">ReactJS</div>
                   <div className="skill">Redux</div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Mollitia iure impedit ullam in maiores possimus, illo a
-                  voluptatibus ipsam. A!
+                  An intuitive tool to create JSON code for new blog articles
+                  for{" "}
+                  <a href="https://www.meetsoutheast.com/">meetsoutheast.com</a>{" "}
+                  that provides a clickable preview of the output.
                 </p>
                 <div className="buttonWrapper">
-                  <div className="button1">VISIT</div>
-                  <div className="button2">
-                    <img
-                      src={
-                        process.env.PUBLIC_URL + "/image/GitHub-Mark-32px.png"
-                      }
-                      alt="GitHub Icon"
-                    />
-                    <div>GitHub</div>
-                  </div>
+                  <a
+                    href="https://www.meetsoutheast.com/secretpath/"
+                    target="_blank"
+                  >
+                    <div className="button1">VISIT</div>
+                  </a>
+                  <a
+                    href="https://github.com/kueckelheim/SouthEastAsiaBlog/tree/master/src/components/form"
+                    target="_blank"
+                  >
+                    <div className="button2">
+                      <img
+                        src={
+                          process.env.PUBLIC_URL + "/image/GitHub-Mark-32px.png"
+                        }
+                        alt="GitHub Icon"
+                      />
+
+                      <div>GitHub</div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -140,9 +162,9 @@ class Projects extends Component {
           {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
           <div
             className="project"
-            onMouseEnter={this.onMouseEnter}
-            onMouseLeave={this.onMouseLeave}
-            id={2}
+            // onMouseEnter={this.onMouseEnter}
+            // onMouseLeave={this.onMouseLeave}
+            // id={2}
           >
             <div className="imgWrapper">
               <img
@@ -164,59 +186,26 @@ class Projects extends Component {
                 </p>
                 <div className="buttonWrapper">
                   <div className="button1">VISIT</div>
-                  <div className="button2">
-                    <img
-                      src={
-                        process.env.PUBLIC_URL + "/image/GitHub-Mark-32px.png"
-                      }
-                      alt="GitHub Icon"
-                    />
-                    <div>GitHub</div>
-                  </div>
+                  <a
+                    href="https://github.com/kueckelheim/portfolio-website"
+                    target="_blank"
+                  >
+                    <div className="button2">
+                      <img
+                        src={
+                          process.env.PUBLIC_URL + "/image/GitHub-Mark-32px.png"
+                        }
+                        alt="GitHub Icon"
+                      />
+
+                      <div>GitHub</div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
           {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-          <div
-            className="project"
-            onMouseEnter={this.onMouseEnter}
-            onMouseLeave={this.onMouseLeave}
-            id={3}
-          >
-            <div className="imgWrapper">
-              <img
-                src={process.env.PUBLIC_URL + "/image/memory.png"}
-                alt="Erik Kueckelheim web developer"
-              />
-            </div>
-            <div className="bottom1">memory</div>
-            <div className="overlay">
-              <div className="wrapper">
-                <div className="overlayName">memory</div>
-                <div className="flex">
-                  <div className="skill">ReactJS</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Mollitia iure impedit ullam in maiores possimus, illo a
-                  voluptatibus ipsam. A!
-                </p>
-                <div className="buttonWrapper">
-                  <div className="button1">VISIT</div>
-                  <div className="button2">
-                    <img
-                      src={
-                        process.env.PUBLIC_URL + "/image/GitHub-Mark-32px.png"
-                      }
-                      alt="GitHub Icon"
-                    />
-                    <div>GitHub</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     );

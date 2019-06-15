@@ -60,6 +60,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-content: center;
+        a {
+          text-decoration: none;
+        }
         .btn {
           width: 80%;
           border: 2px solid lighten($primary-color, 30%);
