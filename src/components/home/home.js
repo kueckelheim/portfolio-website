@@ -12,16 +12,11 @@ import Footer from "./footer/footer.js";
 import { Controller, Scene } from "react-scrollmagic";
 // import { Tween } from "react-gsap";
 
-import ZIndex from "react-z-index";
-
 import "../../config/animate.min.css";
 
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      loaded: false
-    };
 
     this.myProjects = React.createRef();
     this.footer = React.createRef();
@@ -43,21 +38,8 @@ class Home extends Component {
       });
     }
   };
-  onLoaded = () => {
-    this.setState({ loaded: true });
-  };
 
   render() {
-    let LazyHeader;
-    if (this.state.loaded) {
-      LazyHeader = (
-        <ZIndex top important>
-          <Header />
-        </ZIndex>
-      );
-    } else {
-      LazyHeader = null;
-    }
     return (
       <main>
         <Helmet>
@@ -70,16 +52,15 @@ class Home extends Component {
         />
         <Controller>
           <Scene pin={true} triggerHook="onLeave">
-            <div>{LazyHeader}</div>
+            <div className="front">
+              <Header />
+            </div>
           </Scene>
         </Controller>
         <What />
         <SkillsWrapper />
         <div ref={this.myProjects}>
-          <ZIndex bottom>
-            <Projects onLoaded={() => this.onLoaded()} />
-          </ZIndex>
-          >
+          <Projects onLoaded={() => this.onLoaded()} />
         </div>
 
         <div ref={this.footer}>

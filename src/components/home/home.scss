@@ -7,4 +7,8 @@
 
 main {
   font-size: 18px;
+  .front {
+    // position: absolute;
+    z-index: 999;
+  }
 }
