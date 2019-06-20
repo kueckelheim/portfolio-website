@@ -20,21 +20,35 @@ class Home extends Component {
 
     this.myProjects = React.createRef();
     this.footer = React.createRef();
+    this.skills = React.createRef();
+    this.top = React.createRef();
   }
 
   handleClickProjects = event => {
     if (this.myProjects.current) {
       this.myProjects.current.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest"
+        behavior: "smooth"
       });
     }
   };
   handleClickFooter = event => {
     if (this.footer.current) {
       this.footer.current.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest"
+        behavior: "smooth"
+      });
+    }
+  };
+  handleClickSkills = event => {
+    if (this.skills.current) {
+      this.skills.current.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  };
+  handleClickTop = event => {
+    if (this.top.current) {
+      this.top.current.scrollIntoView({
+        behavior: "smooth"
       });
     }
   };
@@ -46,24 +60,33 @@ class Home extends Component {
           <title>Erik Kückelheim</title>
           <meta name="description" content="Frontend Web Developer" />
         </Helmet>
-        <Top
-          onClickProjects={() => this.handleClickProjects()}
-          onClickFooter={() => this.handleClickFooter()}
-        />
+        <div ref={this.top}>
+          <Top
+            onClickProjects={() => this.handleClickProjects()}
+            onClickFooter={() => this.handleClickFooter()}
+          />
+        </div>
         <Controller>
           <Scene pin={true} triggerHook="onLeave">
             <div className="front">
-              <Header />
+              <Header
+                onClickFooter={() => this.handleClickFooter()}
+                onClickProjects={() => this.handleClickProjects()}
+                onClickSkills={() => this.handleClickSkills()}
+                onClickTop={() => this.handleClickTop()}
+              />
             </div>
           </Scene>
         </Controller>
         <What />
-        <SkillsWrapper />
-        <div ref={this.myProjects}>
+        <div ref={this.skills} id="skills">
+          <SkillsWrapper />
+        </div>
+        <div ref={this.myProjects} id="projects">
           <Projects onLoaded={() => this.onLoaded()} />
         </div>
 
-        <div ref={this.footer}>
+        <div ref={this.footer} id="contact">
           <Footer />
         </div>
       </main>

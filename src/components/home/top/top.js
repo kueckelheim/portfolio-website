@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./top.scss";
 
-import { Controller, Scene } from "react-scrollmagic";
-import { Tween } from "react-gsap";
+// import { Controller, Scene } from "react-scrollmagic";
+// import { Tween } from "react-gsap";
 
 class Top extends Component {
   render() {

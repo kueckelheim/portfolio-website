@@ -7,48 +7,29 @@ class Projects extends Component {
   //   this.props.onLoaded();
   // }
 
-  //   constructor(props) {
-  //     super(props);
-  //     this.state = {
-  //       projects: [
-  //         {
-  //           overlayName: "hidden",
-  //           flexBoxName: "hidden"
-  //         },
-  //         {
-  //           overlayName: "hidden",
-  //           flexBoxName: "hidden"
-  //         },
-  //         {
-  //           overlayName: "hidden",
-  //           flexBoxName: "hidden"
-  //         },
-  //         {
-  //           overlayName: "hidden",
-  //           flexBoxName: "hidden"
-  //         }
-  //       ]
-  //     };
-  //   }
+  constructor(props) {
+    super(props);
+    this.state = {
+      projects: [
+        {
+          overlayClass: "overlay"
+        },
+        {
+          overlayClass: "overlay"
+        },
+        {
+          overlayClass: "overlay"
+        }
+      ]
+    };
+  }
 
-  //   onMouseEnter = e => {
-  //     const id = e.currentTarget.id;
-  //     let projects = [...this.state.projects];
-  //     projects[id] = {
-  //       overlayName: "overlayName animated fadeInDown",
-  //       flexBoxName: "flex animated fadeInDown"
-  //     };
-  //     this.setState({ projects });
-  //   };
-  //   onMouseLeave = e => {
-  //     const id = e.currentTarget.id;
-  //     let projects = [...this.state.projects];
-  //     projects[id] = {
-  //       overlayName: "overlayName animated fadeOutUp",
-  //       flexBoxName: "flex animated fadeOutUp"
-  //     };
-  //     this.setState({ projects });
-  //   };
+  handleClick = e => {
+    const id = e.currentTarget.id;
+    let projects = [...this.state.projects];
+    projects[id].overlayClass = "overlay show";
+    this.setState({ projects });
+  };
 
   render() {
     return (
@@ -56,20 +37,17 @@ class Projects extends Component {
         <div className="headline">Projects</div>
         <div className="underline" />
         <div className="grid">
-          <div
-            className="project"
-            // onMouseEnter={this.onMouseEnter}
-            // onMouseLeave={this.onMouseLeave}
-            // id={0}
-          >
-            <div className="imgWrapper">
-              <img
-                src={process.env.PUBLIC_URL + "/image/meetsoutheast.png"}
-                alt="Erik Kueckelheim web developer"
-              />
+          <div className="project">
+            <div className="visible" onClick={this.handleClick} id={0}>
+              <div className="imgWrapper">
+                <img
+                  src={process.env.PUBLIC_URL + "/image/meetsoutheast.png"}
+                  alt="Erik Kueckelheim web developer"
+                />
+                <div className="bottom1">meetsoutheast.com</div>
+              </div>
             </div>
-            <div className="bottom1">meetsoutheast.com</div>
-            <div className="overlay">
+            <div className={this.state.projects[0].overlayClass}>
               <div className="wrapper">
                 <div className="overlayName">meetsoutheast.com</div>
                 <div className="flex">
@@ -115,14 +93,16 @@ class Projects extends Component {
             // onMouseLeave={this.onMouseLeave}
             // id={1}
           >
-            <div className="imgWrapper">
-              <img
-                src={process.env.PUBLIC_URL + "/image/secretpath.png"}
-                alt="Erik Kueckelheim web developer"
-              />
+            <div className="visible" onClick={this.handleClick} id={1}>
+              <div className="imgWrapper">
+                <img
+                  src={process.env.PUBLIC_URL + "/image/secretpath.png"}
+                  alt="Erik Kueckelheim web developer"
+                />
+              </div>
+              <div className="bottom1">Blog Creation Tool (meetsoutheast)</div>
             </div>
-            <div className="bottom1">Blog Creation Tool (meetsoutheast)</div>
-            <div className="overlay">
+            <div className={this.state.projects[1].overlayClass}>
               <div className="wrapper">
                 <div className="overlayName">
                   Blog Creation Tool (meetsoutheast)
@@ -170,14 +150,16 @@ class Projects extends Component {
             // onMouseLeave={this.onMouseLeave}
             // id={2}
           >
-            <div className="imgWrapper">
-              <img
-                src={process.env.PUBLIC_URL + "/image/portfolio.png"}
-                alt="Erik Kueckelheim web developer"
-              />
+            <div className="visible" onClick={this.handleClick} id={2}>
+              <div className="imgWrapper">
+                <img
+                  src={process.env.PUBLIC_URL + "/image/portfolio.png"}
+                  alt="Erik Kueckelheim web developer"
+                />
+              </div>
             </div>
             <div className="bottom1">Portfolio</div>
-            <div className="overlay">
+            <div className={this.state.projects[2].overlayClass}>
               <div className="wrapper">
                 <div className="overlayName">Portfolio</div>
                 <div className="flex">

@@ -2,43 +2,67 @@
 
 footer {
   background: darken(#ffffff, 13%);
-  .headline {
-    text-align: center;
-    padding-top: 10vh;
-    overflow: hidden;
-    font-size: 3vw;
-    color: lighten(black, 20%);
-    font-weight: bold;
-  }
-  .underline {
-    text-align: center;
-    width: 15vw;
-    height: 3px;
-    background: lighten(black, 20%);
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
     margin: 0 auto;
-    margin-bottom: 8vh;
-    margin-top: 10px;
-  }
-  .contact {
-    margin: 0 auto;
-    font-size: 1.5vw;
-    width: 30%;
-    text-align: center;
-    padding: 20px;
-    padding-bottom: 5px;
-    a {
-      color: $secondary-color;
+    width: 80%;
+    grid-gap: 50px;
+    .picture {
+      width: 80%;
+      .portrait {
+        border-radius: 500px;
+        -webkit-border-radius: 500px;
+        -moz-border-radius: 500px;
+        -ms-border-radius: 500px;
+        -o-border-radius: 500px;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        margin-top: 20%;
+      }
     }
-    img {
-      background: grey;
-    }
-    img:hover {
-      background: darken(#ffffff, 33%);
-      transition: all 0.3s ease-out;
-      -webkit-transition: all 0.3s ease-out;
-      -moz-transition: all 0.3s ease-out;
-      -ms-transition: all 0.3s ease-out;
-      -o-transition: all 0.3s ease-out;
+    .contact {
+      margin: 0 auto;
+      font-size: 20px;
+      width: 80%;
+      text-align: center;
+      padding: 20px;
+      padding-bottom: 5px;
+      .headline {
+        text-align: center;
+        padding-top: 10vh;
+        overflow: hidden;
+        font-size: 27px;
+        color: lighten(black, 20%);
+        font-weight: bold;
+      }
+      .underline {
+        text-align: center;
+        width: 15vw;
+        height: 3px;
+        background: lighten(black, 20%);
+        margin: 0 auto;
+        margin-bottom: 8vh;
+        margin-top: 10px;
+      }
+      a {
+        color: $secondary-color;
+      }
+      img {
+        background: grey;
+      }
+      img:hover {
+        background: darken(#ffffff, 33%);
+        transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+      }
     }
   }
   .bottom {
@@ -67,6 +91,16 @@ footer {
     }
     .underline {
       width: 150px;
+    }
+  }
+  @media (max-width: 950px) {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+      .picture {
+        margin: 0 auto;
+        width: 50%;
+      }
     }
   }
 }

@@ -7,48 +7,79 @@ class MenuBtn extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      btnClass: "menu-btn",
+      btnClass: "btn",
+      btnClassClose: "btn close hide",
       showMenu: false,
-      overlayClass: "menu-overlay"
+      navClass: "navBar",
+      navLiClass: "navLi"
     };
   }
 
-  handleClick = () => {
+  handleClick = e => {
     if (!this.state.showMenu) {
       this.setState({
-        btnClass: "menu-btn close",
+        btnClass: "btn hide",
+        btnClassClose: "btn close",
         showMenu: true,
-        overlayClass: "menu-overlay show animated lightSpeedIn"
+        navClass: "navBar show",
+        navLiClass: "navLi"
       });
     } else {
       this.setState({
-        btnClass: "menu-btn",
+        btnClass: "btn",
+        btnClassClose: "btn close hide",
         showMenu: false,
-        overlayClass: "menu-overlay show animated bounceOutUp"
+        navClass: "navBar",
+        navLiClass: "navLi"
       });
+    }
+    if (e.currentTarget.id === "projects") {
+      this.props.onClickProjects();
+    }
+    if (e.currentTarget.id === "contact") {
+      this.props.onClickFooter();
+    }
+    if (e.currentTarget.id === "skills") {
+      this.props.onClickSkills();
     }
   };
 
   render() {
     return (
-      <React.Fragment>
+      <div className="btnMenu">
         <div className={this.state.btnClass} onClick={this.handleClick}>
-          <div className="btn-line-wrapper">
-            <div className="btn-line" />
-            <div className="btn-line" />
-            <div className="btn-line" />
-            <div className="btn-line-close1" />
-            <div className="btn-line-close2" />
+          <div className="btnLine" />
+          <div className="btnLine" />
+          <div className="btnLine" />
+        </div>
+        <div className={this.state.btnClassClose} onClick={this.handleClick}>
+          <div className="btnLine" />
+          <div className="btnLine" />
+        </div>
+        <div className={this.state.navClass}>
+          <div
+            className={this.state.navLiClass}
+            onClick={this.handleClick}
+            id="projects"
+          >
+            Projects
+          </div>
+          <div
+            className={this.state.navLiClass}
+            onClick={this.handleClick}
+            id="skills"
+          >
+            Skills
+          </div>
+          <div
+            className={this.state.navLiClass}
+            onClick={this.handleClick}
+            id="contact"
+          >
+            Contact
           </div>
         </div>
-        <div className={this.state.overlayClass}>
-          <ul>
-            <li>Projects</li>
-            <li>Contact</li>
-            <li>About Me</li>
-          </ul>
-        </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
