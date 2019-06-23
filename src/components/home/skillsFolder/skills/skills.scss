@@ -2,18 +2,18 @@
 
 .skills {
   background: darken(#ffffff, 3%);
-  padding-top: 5vh;
+  padding-top: 20px;
 
   .skillWrapper {
     margin: 0 auto;
     width: 100%;
     .skill {
-      height: 8vh;
+      height: 50px;
       .name {
         float: left;
         width: 15%;
-        height: 5vh;
-        line-height: 5vh;
+        height: 30px;
+        line-height: 30px;
         text-align: center;
         background: $secondary-color;
         color: white;
@@ -22,12 +22,18 @@
       .bar {
         float: left;
         width: 85%;
-        height: 5vh;
+        height: 30px;
         background: lightgrey;
         .fill {
           left: 0;
           height: 100%;
           background: lighten($secondary-color, 20%);
+          width: 0%;
+          transition: width 1s ease-in-out;
+          -webkit-transition: width 1s ease-in-out;
+          -moz-transition: width 1s ease-in-out;
+          -ms-transition: width 1s ease-in-out;
+          -o-transition: width 1s ease-in-out;
           &.css {
             width: 80%;
           }
@@ -54,23 +60,24 @@
     .skillWrapper {
       width: 75%;
       .skill {
-        height: 6vh;
+        height: 50px;
         .name {
-          height: 20px;
-          font-size: 10px;
-          line-height: 20px;
+          height: 30px;
+          font-size: 13px;
+          line-height: 30px;
         }
         .bar {
-          height: 20px;
+          height: 30px;
         }
       }
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     .skillWrapper {
+      width: 95%;
       .skill {
         .name {
-          font-size: 08px;
+          font-size: 10px;
         }
       }
     }

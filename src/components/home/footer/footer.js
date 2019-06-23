@@ -3,6 +3,10 @@ import "./footer.scss";
 import { Link } from "react-router-dom";
 
 class Footer extends Component {
+  onLink = () => {
+    window.scrollTo(0, 0);
+  };
+
   render() {
     return (
       <footer>
@@ -36,10 +40,10 @@ class Footer extends Component {
         </div>
         <div className="bottom">
           <div className="copyright">Copyright &copy; 2019</div>
-          <Link to="/privacy">
+          <Link to="/privacy-policy" onClick={this.onLink}>
             <div className="privacy foot">Privacy Policy</div>
           </Link>
-          <Link to="/impressum">
+          <Link to="/impressum" onClick={this.onLink}>
             <div className="impressum foot">Impressum</div>
           </Link>
         </div>

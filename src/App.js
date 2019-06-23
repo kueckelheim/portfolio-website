@@ -4,6 +4,7 @@ import "./app.scss";
 
 import Home from "./components/home/home.js";
 import Impressum from "./components/impressum/impressum.js";
+import Privacy from "./components/privacy/privacy.js";
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/impressum" component={Impressum} />
+          <Route path="/privacy-policy" component={Privacy} />
         </Switch>
       </Router>
     );
