@@ -2,7 +2,7 @@
 
 ## Visit website
 
-[Visit portfolio website](httos://www.erik-kueckelheim.com)
+[Visit portfolio website](https://www.erik-kueckelheim.com)
 
 ## Author
 
