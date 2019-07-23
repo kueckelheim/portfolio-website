@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./projects.scss";
-import "../../../config/animate.min.css";
 
 import { Controller, Scene } from "react-scrollmagic";
 
@@ -90,12 +89,14 @@ class Projects extends Component {
                         <a
                           href="https://www.meetsoutheast.com/"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <div className="button1">VISIT</div>
                         </a>
                         <a
                           href="https://github.com/kueckelheim/SouthEastAsiaBlog"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <div className="button2">
                             <img
@@ -154,12 +155,14 @@ class Projects extends Component {
                         <a
                           href="https://www.meetsoutheast.com/secretpath/"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <div className="button1">VISIT</div>
                         </a>
                         <a
                           href="https://github.com/kueckelheim/SouthEastAsiaBlog/tree/master/src/components/form"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <div className="button2">
                             <img
@@ -209,6 +212,7 @@ class Projects extends Component {
                         <a
                           href="https://github.com/kueckelheim/portfolio-website"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <div className="button2">
                             <img

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import "../../config/animate.min.css";
 import "./menuBtn.scss";
 
 class MenuBtn extends Component {

@@ -10,9 +10,6 @@ import Projects from "./projects/projects.js";
 import Footer from "./footer/footer.js";
 
 import { Controller, Scene } from "react-scrollmagic";
-// import { Tween } from "react-gsap";
-
-import "../../config/animate.min.css";
 
 class Home extends Component {
   constructor(props) {
@@ -57,8 +54,11 @@ class Home extends Component {
     return (
       <main>
         <Helmet>
-          <title>Erik Kückelheim</title>
-          <meta name="description" content="Frontend Web Developer" />
+          <title>Erik Kückelheim Web Developer in Germany, Constance</title>
+          <meta
+            name="description"
+            content="Frontend Web Developer in the Lake Constance region in Germany."
+          />
         </Helmet>
         <div ref={this.top}>
           <Top

@@ -1,22 +1,9 @@
 import React, { Component } from "react";
 import "./top.scss";
 
-// import { Controller, Scene } from "react-scrollmagic";
-// import { Tween } from "react-gsap";
-
 class Top extends Component {
   render() {
     return (
-      // <Controller>
-      //   <Scene triggerElement="#trigger" duration="100%" triggerHook="onEnter">
-      //     {progress => (
-      //       <Tween
-      //         to={{
-      //           opacity: "0"
-      //         }}
-      //         totalProgress={progress}
-      //         paused
-      //       >
       <div className="top">
         <div className="profileWrapper">
           <div className="container">
@@ -44,7 +31,11 @@ class Top extends Component {
                 >
                   PROJECTS
                 </div>
-                <a href="https://github.com/kueckelheim" target="_blank">
+                <a
+                  href="https://github.com/kueckelheim"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="btn">
                     <div className="center">
                       <div className="wrapper">
@@ -65,11 +56,6 @@ class Top extends Component {
           </div>
         </div>
       </div>
-      //       </Tween>
-      //     )}
-      //   </Scene>
-      //   <div id="trigger" />
-      // </Controller>
     );
   }
 }

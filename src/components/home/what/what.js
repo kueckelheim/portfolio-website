@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./what.scss";
-import "../../../config/animate.min.css";
 
 import { Controller, Scene } from "react-scrollmagic";
 
