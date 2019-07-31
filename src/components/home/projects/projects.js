@@ -58,43 +58,47 @@ class Projects extends Component {
           >
             {() => (
               <div className="grid">
+                {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
                 <div className="project">
-                  <div className="visible" onClick={this.handleClick} id={0}>
+                  <div className="visible" onClick={this.handleClick} id={1}>
                     <div className="imgWrapper">
                       <img
                         src={
-                          process.env.PUBLIC_URL + "/image/meetsoutheast.png"
+                          process.env.PUBLIC_URL +
+                          "/image/responsive-grid-generator.png"
                         }
-                        alt="Erik Kueckelheim web developer"
+                        alt="Responsive Grid Generator by Erik Kückelheim"
                       />
-                      <div className="bottom1">meetsoutheast.com</div>
                     </div>
+                    <div className="bottom1">Responsive Grid Generator</div>
                   </div>
-                  <div className={this.state.projects[0].overlayClass}>
+                  <div className={this.state.projects[1].overlayClass}>
                     <div className="wrapper">
-                      <div className="overlayName">meetsoutheast.com</div>
+                      <div className="overlayName">
+                        Responsive Grid Generator
+                      </div>
                       <div className="flex">
                         <div className="skill">ReactJS</div>
                         <div className="skill">Redux</div>
-                        <div className="skill">axios</div>
-                        <div className="skill">Django</div>
-                        <div className="skill">RestAPI</div>
-                        <div className="skill">R</div>
+                        <div className="skill">scss</div>
                       </div>
                       <p>
-                        A fully customized blog page written in ReactJS with a
-                        Django-based backend for commenting
+                        A clickable grid generator. Blazing fast website-layout
+                        creation with an intuitive and interactive tool.
+                        Drag-to-select area selection and output preview on
+                        different screen sizes.
                       </p>
+
                       <div className="buttonWrapper">
                         <a
-                          href="https://www.meetsoutheast.com/"
+                          href="https://responsive-grid-generator.netlify.com/"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           <div className="button1">VISIT</div>
                         </a>
                         <a
-                          href="https://github.com/kueckelheim/SouthEastAsiaBlog"
+                          href="https://github.com/kueckelheim/responsive-grid-generator"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -114,14 +118,8 @@ class Projects extends Component {
                     </div>
                   </div>
                 </div>
-
                 {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-                <div
-                  className="project"
-                  // onMouseEnter={this.onMouseEnter}
-                  // onMouseLeave={this.onMouseLeave}
-                  // id={1}
-                >
+                <div className="project">
                   <div className="visible" onClick={this.handleClick} id={1}>
                     <div className="imgWrapper">
                       <img
@@ -180,6 +178,64 @@ class Projects extends Component {
                     </div>
                   </div>
                 </div>
+                {/* ************************************************************************************ */}
+                <div className="project">
+                  <div className="visible" onClick={this.handleClick} id={0}>
+                    <div className="imgWrapper">
+                      <img
+                        src={
+                          process.env.PUBLIC_URL + "/image/meetsoutheast.png"
+                        }
+                        alt="Erik Kueckelheim web developer"
+                      />
+                      <div className="bottom1">meetsoutheast.com</div>
+                    </div>
+                  </div>
+                  <div className={this.state.projects[0].overlayClass}>
+                    <div className="wrapper">
+                      <div className="overlayName">meetsoutheast.com</div>
+                      <div className="flex">
+                        <div className="skill">ReactJS</div>
+                        <div className="skill">Redux</div>
+                        <div className="skill">axios</div>
+                        <div className="skill">Django</div>
+                        <div className="skill">RestAPI</div>
+                        <div className="skill">R</div>
+                      </div>
+                      <p>
+                        A fully customized blog page written in ReactJS with a
+                        Django-based backend for commenting
+                      </p>
+                      <div className="buttonWrapper">
+                        <a
+                          href="https://www.meetsoutheast.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="button1">VISIT</div>
+                        </a>
+                        <a
+                          href="https://github.com/kueckelheim/SouthEastAsiaBlog"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="button2">
+                            <img
+                              src={
+                                process.env.PUBLIC_URL +
+                                "/image/GitHub-Mark-32px.png"
+                              }
+                              alt="GitHub Icon"
+                            />
+
+                            <div>GitHub</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
                 <div
                   className="project"
