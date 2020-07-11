@@ -33,7 +33,7 @@ class Footer extends Component {
             </p>
             <p>
               <a href="mailto:erik.kueckelheim@aol.com">
-                erik.kueckelheim@aol.com
+                kueckelheim.erik@gmail.com
               </a>
             </p>
           </div>

@@ -130,8 +130,8 @@ class Privacy extends Component {
 <p>Pforrgasse 7</p>
 <p>79206 Breisach</p>
 <p>Germany</p>
-<p>Phone: +55 11 96644-4270</p>
-<p>Email: erik.kueckelheim@aol.com</p>
+<p>Phone: +49 1525 8962327</p>
+<p>Email: kueckelheim.erik@gmail.com</p>
 <p>Website: https://www.erik-kueckelheim.com</p>
 
 <h4>3. Collection of general data and information</h4>
