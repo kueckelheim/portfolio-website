@@ -24,7 +24,7 @@ class Footer extends Component {
             Do you have any questions or want to work together? Send me an
             Email!
             <p>
-              <a href="mailto:erik.kueckelheim@aol.com">
+              <a href="mailto:kueckelheim.erik@gmail.com">
                 <img
                   src={process.env.PUBLIC_URL + "/image/mail-icon.png"}
                   alt="Mail Icon"
@@ -32,14 +32,14 @@ class Footer extends Component {
               </a>
             </p>
             <p>
-              <a href="mailto:erik.kueckelheim@aol.com">
+              <a href="mailto:kueckelheim.erik@gmail.com">
                 kueckelheim.erik@gmail.com
               </a>
             </p>
           </div>
         </div>
         <div className="bottom">
-          <div className="copyright">Copyright &copy; 2019</div>
+          <div className="copyright">Copyright &copy; 2020</div>
           <Link to="/privacy-policy" onClick={this.onLink}>
             <div className="privacy foot">Privacy Policy</div>
           </Link>

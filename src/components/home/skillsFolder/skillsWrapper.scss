@@ -36,11 +36,10 @@
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1vw;
+    grid-gap: 3vw;
     background: darken(#ffffff, 3%);
     padding-left: 4vw;
     padding-right: 4vw;
-    align-items: center;
     .strengths {
       opacity: 1;
     }

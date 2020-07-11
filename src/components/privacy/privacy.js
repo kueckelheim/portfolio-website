@@ -127,8 +127,8 @@ class Privacy extends Component {
 </p>
 
 <p>Erik Kückelheim</p>
-<p>Pforrgasse 7</p>
-<p>79206 Breisach</p>
+<p>Kuhmoosweg 3</p>
+<p>78464 Konstanz</p>
 <p>Germany</p>
 <p>Phone: +49 1525 8962327</p>
 <p>Email: kueckelheim.erik@gmail.com</p>

@@ -9,40 +9,6 @@ class Skills extends Component {
     return (
       <div className="skills">
         <div className="skillWrapper">
-          <div className="skill">
-            <div className="name">CSS</div>
-            <div className="bar">
-              <div id="triggerBar" />
-              <Controller>
-                <Scene
-                  classToggle="css"
-                  triggerElement="#triggerBar"
-                  // reverse={false}
-                  triggerHook="onEnter"
-                >
-                  {() => <div className="fill" />}
-                </Scene>
-              </Controller>
-              <div className="percentage" />
-            </div>
-          </div>
-
-          <div className="skill">
-            <div className="name">HTML</div>
-            <div className="bar">
-              <Controller>
-                <Scene
-                  classToggle="html"
-                  triggerElement="#triggerBar"
-                  // reverse={false}
-                  triggerHook="onEnter"
-                >
-                  {() => <div className="fill" />}
-                </Scene>
-              </Controller>
-              <div className="percentage" />
-            </div>
-          </div>
 
           <div className="skill">
             <div className="name">JavaScript</div>
@@ -79,11 +45,12 @@ class Skills extends Component {
           </div>
 
           <div className="skill">
-            <div className="name">R</div>
+            <div className="name">Docker</div>
             <div className="bar">
+              <div id="triggerBar" />
               <Controller>
                 <Scene
-                  classToggle="r"
+                  classToggle="docker"
                   triggerElement="#triggerBar"
                   // reverse={false}
                   triggerHook="onEnter"
@@ -96,11 +63,63 @@ class Skills extends Component {
           </div>
 
           <div className="skill">
-            <div className="name">Django</div>
+            <div className="name">Webpack</div>
+            <div className="bar">
+              <div id="triggerBar" />
+              <Controller>
+                <Scene
+                  classToggle="webpack"
+                  triggerElement="#triggerBar"
+                  // reverse={false}
+                  triggerHook="onEnter"
+                >
+                  {() => <div className="fill" />}
+                </Scene>
+              </Controller>
+              <div className="percentage" />
+            </div>
+          </div>
+
+          <div className="skill">
+            <div className="name">Node.js</div>
             <div className="bar">
               <Controller>
                 <Scene
-                  classToggle="django"
+                  classToggle="node"
+                  triggerElement="#triggerBar"
+                  // reverse={false}
+                  triggerHook="onEnter"
+                >
+                  {() => <div className="fill" />}
+                </Scene>
+              </Controller>
+              <div className="percentage" />
+            </div>
+          </div>
+
+          <div className="skill">
+            <div className="name">Express</div>
+            <div className="bar">
+              <Controller>
+                <Scene
+                  classToggle="express"
+                  triggerElement="#triggerBar"
+                  // reverse={false}
+                  triggerHook="onEnter"
+                >
+                  {() => <div className="fill" />}
+                </Scene>
+              </Controller>
+              <div className="percentage" />
+            </div>
+          </div>
+
+          <div className="skill">
+            <div className="name">REST API</div>
+            <div className="bar">
+              <Controller>
+                <Scene
+                  classToggle="rest"
                   triggerElement="#triggerBar"
                   // reverse={false}
                   triggerHook="onEnter"

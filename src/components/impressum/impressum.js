@@ -79,12 +79,12 @@ class Impressum extends Component {
           <ul>
             <li>Erik Kückelheim</li>
             <ul>
-              <li>Pforrgasse 7</li>
-              <li>79206 Breisach</li>
+              <li>Kuhmoosweg 3</li>
+              <li>78464 Konstanz</li>
               <li>Germany</li>
             </ul>
             <li>E-Mail: erik.kueckelheim@aol.com</li>
-            <li>Phone: +55 11 96644-4270</li>
+            <li>Phone: +49 15 25896-2327</li>
             <li>
               Verantwortlicher im Sinne des Presserechts (V.i.S.d.P.): Erik
               Kückelheim

@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./skillsWrapper.scss";
 
 import Skills from "./skills/skills.js";
-import Strengths from "./strengths/strengths.js";
+import Tech from "./tech/tech.js";
+// import Strengths from "./strengths/strengths.js";
 
 import { Controller, Scene } from "react-scrollmagic";
 
@@ -29,8 +30,8 @@ class SkillsWrapper extends Component {
             <div className="underline" />
           </Scene>
           <div className="grid">
-            <Strengths />
             <Skills />
+            <Tech />
           </div>
         </Controller>
       </div>

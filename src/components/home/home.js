@@ -4,7 +4,7 @@ import "./home.scss";
 
 import Header from "../header/header.js";
 import Top from "./top/top.js";
-import What from "./what/what.js";
+// import What from "./what/what.js";
 import SkillsWrapper from "./skillsFolder/skillsWrapper.js";
 import Projects from "./projects/projects.js";
 import Footer from "./footer/footer.js";
@@ -57,7 +57,7 @@ class Home extends Component {
           <title>Erik Kückelheim Web Developer in Germany, Constance</title>
           <meta
             name="description"
-            content="Frontend Web Developer in the Lake Constance region in Germany."
+            content="Javascript Developer in the Lake Constance region in Germany."
           />
         </Helmet>
         <div ref={this.top}>
@@ -78,12 +78,12 @@ class Home extends Component {
             </div>
           </Scene>
         </Controller>
-        <What />
-        <div ref={this.skills} id="skills">
-          <SkillsWrapper />
-        </div>
+        {/* <What /> */}
         <div ref={this.myProjects} id="projects">
           <Projects onLoaded={() => this.onLoaded()} />
+        </div>
+        <div ref={this.skills} id="skills">
+          <SkillsWrapper />
         </div>
 
         <div ref={this.footer} id="contact">

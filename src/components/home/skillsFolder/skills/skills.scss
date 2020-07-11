@@ -34,23 +34,26 @@
           -moz-transition: width 1s ease-in-out;
           -ms-transition: width 1s ease-in-out;
           -o-transition: width 1s ease-in-out;
-          &.css {
-            width: 80%;
+          &.docker {
+            width: 60%;
           }
           &.js {
-            width: 70%;
+            width: 95%;
           }
-          &.html {
-            width: 90%;
-          }
-          &.react {
+          &.webpack {
             width: 75%;
           }
-          &.r {
-            width: 90%;
+          &.react {
+            width: 95%;
           }
-          &.django {
-            width: 20%;
+          &.node {
+            width: 75%;
+          }
+          &.express {
+            width: 80%;
+          }
+          &.rest {
+            width: 85%;
           }
         }
       }
