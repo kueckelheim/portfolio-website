@@ -112,6 +112,7 @@
           }
           .flex {
             display: flex;
+            flex-wrap: wrap;
             width: 80%;
             margin: 0 auto;
             justify-content: center;
@@ -308,6 +309,54 @@
     }
   }
   @media (max-width: 600px) {
+    .grid {
+      .project {
+        .overlay {
+          .wrapper {
+            margin-top: 2%;
+            .overlayName {
+              font-size: 18px;
+            }
+            .flex {
+              margin-top: 0;
+              .skill {
+                font-size: 12px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                padding-left: 0.7vw;
+                padding-right: 0.7vw;
+              }
+            }
+            p {
+              font-size: 15px;
+              padding-top: 0px;
+            }
+            .buttonWrapper {
+              margin-top: 10px;
+              .button1 {
+                font-size: 14px;
+                margin-right: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 8px;
+                padding-right: 8px;
+              }
+              .button2 {
+                margin-left: 20px;
+                font-size: 14px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 8px;
+                padding-right: 8px;
+                img {
+                  height: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     .headline {
       font-size: 26px;
     }
