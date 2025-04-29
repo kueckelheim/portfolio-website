@@ -1,22 +1,38 @@
-# My portfolio website built with React
+# sv
 
-## Visit website
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-[Visit portfolio website](https://www.erik-kueckelheim.com)
+## Creating a project
 
-## Author
+If you're seeing this, you've probably already done this step. Congrats!
 
-[Erik Kückelheim](https://github.com/kueckelheim)
+```bash
+# create a new project in the current directory
+npx sv create
 
-## Built With
+# create a new project in my-app
+npx sv create my-app
+```
 
-- React - The web framework used
-- [Create React App](https://github.com/facebook/create-react-app) - easy to use React-Babel-Webpack configuration
-- [npm](https://github.com/npm/cli) - a JavaScript package manager
+## Developing
 
-## JavaScript libraries
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-- [react-scrollmagic](https://github.com/bitworking/react-scrollmagic) - React components for [ScrollMagic](https://github.com/janpaepke/ScrollMagic) to build scroll-interactions
-- [react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom) - DOM bindings for React Router
-- [react-helmet](https://github.com/nfl/react-helmet) - document head manager for react (SEO purposes)
-- [react-responsive](https://github.com/contra/react-responsive) - CSS media queries for react. Used to make a mobile friendly header
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
